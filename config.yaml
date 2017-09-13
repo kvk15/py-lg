@@ -1,0 +1,10 @@
+user: qwerty
+password: qwerty#
+
+;; Domain name routers:
+routers:
+    - desc: "Saint-Petersburg HOST"
+      host: 127.0.0.1
+    - desc: "Moscow HOST"
+      host: 127.0.0.2
+

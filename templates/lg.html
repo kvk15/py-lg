@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Company LG Result</title>
+    <style type="text/css">
+      .main{
+      padding: 0 0 0 223px;
+      }
+      .menu { 
+      float: left;
+      width: 200px;   
+      margin-left: -222px;
+      }
+      .conten {
+      margin: 5px 5px 5px 222px;
+      }
+    </style>
+  </head>
+<body>
+<div class="main">
+<div class="menu">
+<H2>Looking Glass</H2>
+<form name="menu" action="/" method="POST" target="OUT">
+  <dt><b>Hosts:</b></dt>
+  <dd><select name=host>
+  {% for host in hosts %}
+  <option value={{ host }}>{{ host }}</option>
+  {% endfor %}
+  </select></dd>
+  <dt><b>Command:</b></dt>
+  <dd><input type="radio" name="command" value="summary">bgp summary</dd>  
+  <dd><input type="radio" name="command" value="bgp">bgp</dd>
+  <dd><input type="radio" name="command" value="best">bgp best routes</dd>
+  <dd><input type="radio" name="command" value="advertise">bgp advertised-routes</dd>
+  <dd><input type="radio" name="command" value="trace" checked>traceroute</dd>
+  <dd><input type="radio" name="command" value="ping">ping</dd>
+  <dt><b>IP-Address</b></dt>
+  <dd><input type="text" name="addr" value="{{ IP }}"></dd>
+<br />
+  <dd><input type="submit" value="Submit"></dd>
+</form>
+</div>
+
+<div class="content">
+  <center><h1>Complete (AS59516)</h1></center>
+  <pre>
+    {{ res }}
+    111
+    112
+    113
+    114
+    115
+    116
+    117
+    118
+    119
+    110
+    1111
+    1112
+    1113
+    1114
+    1115
+    1116
+    1117
+    1118
+    1119
+    1120
+    1121
+    1122
+
+    1111
+    1112
+    1113
+    1114
+    1115
+    1116
+    1117
+    1118
+    1119
+    1120
+    1121
+    1122
+
+    111
+    112
+    113
+    114
+    115
+    116
+    117
+    118
+    119
+    110
+    1111
+    1112
+    1113
+    1114
+    1115
+    1116
+    1117
+    1118
+    1119
+    1120
+    1121
+    1122
+
+    1111
+    1112
+    1113
+    1114
+    1115
+    1116
+    1117
+    1118
+    1119
+    1120
+    1121
+    1122
+
+    1111
+    1112
+    1113
+    1114
+    1115
+    1116
+    1117
+    1118
+    1119
+    1120
+    1121
+    1122
+
+    111
+    112
+    113
+    114
+    115
+    116
+    117
+    118
+    119
+    110
+    1111
+    1112
+    1113
+    1114
+    1115
+    1116
+    1117
+    1118
+    1119
+    1120
+    1121
+    1122
+
+
+  </pre>
+</div>
+</div>
+</body>
+</html>
